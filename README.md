@@ -7,3 +7,8 @@
 <p align="center">
   <img src="bot.png" width="668">
 </p>
+
+
+# how to run 
+`docker build -t redditbot:v1.0 .`
+`docker run -d --name redditbot -e TG_TOKEN=token -e DATABASE_URL=file:./reddit.db -e TG_AUTHOR=yourID -e BOT_NAME=yourBotName redditbot:v1.0`
